@@ -17,7 +17,7 @@ def encrypt_caesar(plaintext: str) -> str:
             d = 'A' if char.isupper() else 'a'
             cipher = (((ord(char) + 3) - ord(d)) % 26) + ord(d)
             ciphertext = ciphertext + chr(cipher)
-     return ciphertext
+    return ciphertext
 
 
 def decrypt_caesar(ciphertext: str) -> str:
