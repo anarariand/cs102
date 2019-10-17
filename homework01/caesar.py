@@ -31,5 +31,12 @@ def decrypt_caesar(ciphertext: str) -> str:
     >>> decrypt_caesar("")
     ''
     """
-    # PUT YOUR CODE HERE
+    plaintext = ""
+    for char in ciphertext:
+        if not char.isalpha():
+            plaintext = plaintext + char
+        else:
+            d = 'A' if char.isupper() else 'a'
+            cipher = (((ord(char) + 23) - ord(d)) % 26) + ord(d)
+            plaintext = plaintext + chr(cipher)
     return plaintext
