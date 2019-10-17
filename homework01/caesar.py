@@ -9,7 +9,14 @@ def encrypt_caesar(plaintext: str) -> str:
     >>> encrypt_caesar("")
     ''
     """
-    # PUT YOUR CODE HERE
+    ciphertext = ""
+    for char in plaintext:
+        if not char.isalpha():
+            ciphertext = ciphertext + char
+        else:
+            d = 'A' if char.isupper() else 'a'
+            cipher = (((ord(char) + 3) - ord(d)) % 26) + ord(d)
+            ciphertext = ciphertext + chr(cipher)
      return ciphertext
 
 
