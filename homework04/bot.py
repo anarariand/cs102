@@ -10,7 +10,7 @@ telebot.apihelper.proxy = {'https': 'https://191.238.217.84:80'}
 days = {'monday' : 1, 'tuesday' : 2, 'wednesday' : 3,
             'thursday' : 4, 'friday' : 5, 'saturday' : 6, 'sunday' : 7}
 
-bot = telebot.TeleBot("970813778:AAE6Ntw0p055TeNo3NHfWbs0N2vzVRptvy8")
+bot = telebot.TeleBot("653582719:AAHFghkyK793qPntTnVaVWWYPMsSTlBtAVw")
 
 
 def get_page(group: str, week: str='') -> str:
